@@ -1,0 +1,82 @@
+version: "3.9"
+
+services:
+  minio:
+    image: minio/minio:latest
+    container_name: minio
+    restart: always
+    ports:
+      - "9000:9000"   # API S3
+      - "9001:9001"   # Console web
+    environment:
+      MINIO_ROOT_USER: admin
+      MINIO_ROOT_PASSWORD: admin123
+    command: server /data --console-address ":9001"
+    volumes:
+      - ./data:/data   # pasta local persistência
+
+  mc:
+    image: minio/mc:latest
+    container_name: minio-client
+    depends_on:
+      - minio
+    entrypoint: >
+      /bin/sh -c "
+        echo 'Aguardando MinIO...';
+        until (/usr/bin/mc alias set local http://minio:9000 admin admin123) do
+          sleep 2;
+        done;
+
+        echo 'Criando buckets...';
+        mc mb local/bronze || true;
+        mc mb local/silver || true;
+        mc mb local/gold   || true;
+
+        echo 'Definindo políticas...';
+        mc anonymous set public local/bronze || true;
+
+        # Política Bronze: leitura/escrita total
+        mc admin policy add local bronze-rw <(echo '{
+          \"Version\": \"2012-10-17\",
+          \"Statement\": [{
+            \"Effect\": \"Allow\",
+            \"Action\": [\"s3:GetObject\", \"s3:PutObject\", \"s3:DeleteObject\"],
+            \"Resource\": [\"arn:aws:s3:::bronze/*\"]
+          }]
+        }')
+
+        # Política Silver: somente leitura
+        mc admin policy add local silver-ro <(echo '{
+          \"Version\": \"2012-10-17\",
+          \"Statement\": [{
+            \"Effect\": \"Allow\",
+            \"Action\": [\"s3:GetObject\"],
+            \"Resource\": [\"arn:aws:s3:::silver/*\"]
+          }]
+        }')
+
+        # Política Gold: somente leitura
+        mc admin policy add local gold-ro <(echo '{
+          \"Version\": \"2012-10-17\",
+          \"Statement\": [{
+            \"Effect\": \"Allow\",
+            \"Action\": [\"s3:GetObject\"],
+            \"Resource\": [\"arn:aws:s3:::gold/*\"]
+          }]
+        }')
+
+        echo 'Criando usuários...';
+        mc admin user add local bronze_user bronze123 || true;
+        mc admin user add local silver_user silver123 || true;
+        mc admin user add local gold_user   gold123   || true;
+
+        echo 'Vinculando políticas aos usuários...';
+        mc admin policy set local bronze-rw user=bronze_user
+        mc admin policy set local silver-ro user=silver_user
+        mc admin policy set local gold-ro   user=gold_user
+
+        echo 'Setup concluído!';
+        tail -f /dev/null
+      "
+    volumes:
+      - ./data:/data
