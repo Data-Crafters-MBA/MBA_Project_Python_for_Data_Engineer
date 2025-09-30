@@ -1,0 +1,37 @@
+resources:
+  jobs:
+    Job_Python_Data_Engineer:
+      name: Job Python Data Engineer
+      schedule:
+        quartz_cron_expression: 8 0 8 * * ?
+        timezone_id: America/Sao_Paulo
+        pause_status: UNPAUSED
+      tasks:
+        - task_key: Ingestao
+          notebook_task:
+            notebook_path: /Workspace/Users/brunosssss@gmail.com/MBA_Project_Python_for_Data_Engineer/Notebooks/ingestao
+            source: WORKSPACE
+        - task_key: transfomacao
+          depends_on:
+            - task_key: Ingestao
+          notebook_task:
+            notebook_path: /Workspace/Users/brunosssss@gmail.com/MBA_Project_Python_for_Data_Engineer/Notebooks/transformacao
+            base_parameters:
+              current_datetime: "{{job.start_time.iso_datetime}}"
+            source: WORKSPACE
+        - task_key: Carregamento
+          depends_on:
+            - task_key: transfomacao
+          notebook_task:
+            notebook_path: /Workspace/Users/diogoantonio57@gmail.com/MBA_Project_Python_for_Data_Engineer/Notebooks/load
+            source: WORKSPACE
+      git_source:
+        git_url: https://github.com/Data-Crafters-MBA/MBA_Project_Python_for_Data_Engineer.git
+        git_provider: gitHub
+        git_branch: ajuste_ingestao
+      queue:
+        enabled: true
+      parameters:
+        - name: rate
+          default: BRL
+      performance_target: STANDARD
