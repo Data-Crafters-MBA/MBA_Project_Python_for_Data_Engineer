@@ -1,0 +1,164 @@
+sigla_moeda,nome_moeda,nome_pais,nome_continente
+AED,UAE Dirham,United Arab Emirates,Ásia
+AFN,Afghan Afghani,Afghanistan,Ásia
+ALL,Albanian Lek,Albania,Europa
+AMD,Armenian Dram,Armenia,Ásia
+ANG,Netherlands Antillian Guilder,Netherlands Antilles,América do Norte
+AOA,Angolan Kwanza,Angola,África
+ARS,Argentine Peso,Argentina,América do Sul
+AUD,Australian Dollar,Australia,Oceania
+AWG,Aruban Florin,Aruba,América do Norte
+AZN,Azerbaijani Manat,Azerbaijan,Ásia
+BAM,Bosnia and Herzegovina Mark,Bosnia and Herzegovina,Europa
+BBD,Barbados Dollar,Barbados,América do Norte
+BDT,Bangladeshi Taka,Bangladesh,Ásia
+BGN,Bulgarian Lev,Bulgaria,Europa
+BHD,Bahraini Dinar,Bahrain,Ásia
+BIF,Burundian Franc,Burundi,África
+BMD,Bermudian Dollar,Bermuda,América do Norte
+BND,Brunei Dollar,Brunei,Ásia
+BOB,Bolivian Boliviano,Bolivia,América do Sul
+BRL,Brazilian Real,Brazil,América do Sul
+BSD,Bahamian Dollar,Bahamas,América do Norte
+BTN,Bhutanese Ngultrum,Bhutan,Ásia
+BWP,Botswana Pula,Botswana,África
+BYN,Belarusian Ruble,Belarus,Europa
+BZD,Belize Dollar,Belize,América do Norte
+CAD,Canadian Dollar,Canada,América do Norte
+CDF,Congolese Franc,Democratic Republic of the Congo,África
+CHF,Swiss Franc,Switzerland,Europa
+CLP,Chilean Peso,Chile,América do Sul
+CNY,Chinese Renminbi,China,Ásia
+COP,Colombian Peso,Colombia,América do Sul
+CRC,Costa Rican Colon,Costa Rica,América do Norte
+CUP,Cuban Peso,Cuba,América do Norte
+CVE,Cape Verdean Escudo,Cape Verde,África
+CZK,Czech Koruna,Czech Republic,Europa
+DJF,Djiboutian Franc,Djibouti,África
+DKK,Danish Krone,Denmark,Europa
+DOP,Dominican Peso,Dominican Republic,América do Norte
+DZD,Algerian Dinar,Algeria,África
+EGP,Egyptian Pound,Egypt,África
+ERN,Eritrean Nakfa,Eritrea,África
+ETB,Ethiopian Birr,Ethiopia,África
+EUR,Euro,European Union,Europa
+FJD,Fiji Dollar,Fiji,Oceania
+FKP,Falkland Islands Pound,Falkland Islands,América do Sul
+FOK,Faroese Króna,Faroe Islands,Europa
+GBP,Pound Sterling,United Kingdom,Europa
+GEL,Georgian Lari,Georgia,Ásia
+GGP,Guernsey Pound,Guernsey,Europa
+GHS,Ghanaian Cedi,Ghana,África
+GIP,Gibraltar Pound,Gibraltar,Europa
+GMD,Gambian Dalasi,The Gambia,África
+GNF,Guinean Franc,Guinea,África
+GTQ,Guatemalan Quetzal,Guatemala,América do Norte
+GYD,Guyanese Dollar,Guyana,América do Sul
+HKD,Hong Kong Dollar,Hong Kong,Ásia
+HNL,Honduran Lempira,Honduras,América do Norte
+HRK,Croatian Kuna,Croatia,Europa
+HTG,Haitian Gourde,Haiti,América do Norte
+HUF,Hungarian Forint,Hungary,Europa
+IDR,Indonesian Rupiah,Indonesia,Ásia
+ILS,Israeli New Shekel,Israel,Ásia
+IMP,Manx Pound,Isle of Man,Europa
+INR,Indian Rupee,India,Ásia
+IQD,Iraqi Dinar,Iraq,Ásia
+IRR,Iranian Rial,Iran,Ásia
+ISK,Icelandic Króna,Iceland,Europa
+JEP,Jersey Pound,Jersey,Europa
+JMD,Jamaican Dollar,Jamaica,América do Norte
+JOD,Jordanian Dinar,Jordan,Ásia
+JPY,Japanese Yen,Japan,Ásia
+KES,Kenyan Shilling,Kenya,África
+KGS,Kyrgyzstani Som,Kyrgyzstan,Ásia
+KHR,Cambodian Riel,Cambodia,Ásia
+KID,Kiribati Dollar,Kiribati,Oceania
+KMF,Comorian Franc,Comoros,África
+KRW,South Korean Won,South Korea,Ásia
+KWD,Kuwaiti Dinar,Kuwait,Ásia
+KYD,Cayman Islands Dollar,Cayman Islands,América do Norte
+KZT,Kazakhstani Tenge,Kazakhstan,Ásia
+LAK,Lao Kip,Laos,Ásia
+LBP,Lebanese Pound,Lebanon,Ásia
+LKR,Sri Lanka Rupee,Sri Lanka,Ásia
+LRD,Liberian Dollar,Liberia,África
+LSL,Lesotho Loti,Lesotho,África
+LYD,Libyan Dinar,Libya,África
+MAD,Moroccan Dirham,Morocco,África
+MDL,Moldovan Leu,Moldova,Europa
+MGA,Malagasy Ariary,Madagascar,África
+MKD,Macedonian Denar,North Macedonia,Europa
+MMK,Burmese Kyat,Myanmar,Ásia
+MNT,Mongolian Tögrög,Mongolia,Ásia
+MOP,Macanese Pataca,Macau,Ásia
+MRU,Mauritanian Ouguiya,Mauritania,África
+MUR,Mauritian Rupee,Mauritius,África
+MVR,Maldivian Rufiyaa,Maldives,Ásia
+MWK,Malawian Kwacha,Malawi,África
+MXN,Mexican Peso,Mexico,América do Norte
+MYR,Malaysian Ringgit,Malaysia,Ásia
+MZN,Mozambican Metical,Mozambique,África
+NAD,Namibian Dollar,Namibia,África
+NGN,Nigerian Naira,Nigeria,África
+NIO,Nicaraguan Córdoba,Nicaragua,América do Norte
+NOK,Norwegian Krone,Norway,Europa
+NPR,Nepalese Rupee,Nepal,Ásia
+NZD,New Zealand Dollar,New Zealand,Oceania
+OMR,Omani Rial,Oman,Ásia
+PAB,Panamanian Balboa,Panama,América do Norte
+PEN,Peruvian Sol,Peru,América do Sul
+PGK,Papua New Guinean Kina,Papua New Guinea,Oceania
+PHP,Philippine Peso,Philippines,Ásia
+PKR,Pakistani Rupee,Pakistan,Ásia
+PLN,Polish Złoty,Poland,Europa
+PYG,Paraguayan Guaraní,Paraguay,América do Sul
+QAR,Qatari Riyal,Qatar,Ásia
+RON,Romanian Leu,Romania,Europa
+RSD,Serbian Dinar,Serbia,Europa
+RUB,Russian Ruble,Russia,Europa
+RWF,Rwandan Franc,Rwanda,África
+SAR,Saudi Riyal,Saudi Arabia,Ásia
+SBD,Solomon Islands Dollar,Solomon Islands,Oceania
+SCR,Seychellois Rupee,Seychelles,África
+SDG,Sudanese Pound,Sudan,África
+SEK,Swedish Krona,Sweden,Europa
+SGD,Singapore Dollar,Singapore,Ásia
+SHP,Saint Helena Pound,Saint Helena,África
+SLE,Sierra Leonean Leone,Sierra Leone,África
+SOS,Somali Shilling,Somalia,África
+SRD,Surinamese Dollar,Suriname,América do Sul
+SSP,South Sudanese Pound,South Sudan,África
+STN,São Tomé and Príncipe Dobra,São Tomé and Príncipe,África
+SYP,Syrian Pound,Syria,Ásia
+SZL,Eswatini Lilangeni,Eswatini,África
+THB,Thai Baht,Thailand,Ásia
+TJS,Tajikistani Somoni,Tajikistan,Ásia
+TMT,Turkmenistan Manat,Turkmenistan,Ásia
+TND,Tunisian Dinar,Tunisia,África
+TOP,Tongan Paʻanga,Tonga,Oceania
+TRY,Turkish Lira,Turkey,Ásia
+TTD,Trinidad and Tobago Dollar,Trinidad and Tobago,América do Norte
+TVD,Tuvaluan Dollar,Tuvalu,Oceania
+TWD,New Taiwan Dollar,Taiwan,Ásia
+TZS,Tanzanian Shilling,Tanzania,África
+UAH,Ukrainian Hryvnia,Ukraine,Europa
+UGX,Ugandan Shilling,Uganda,África
+USD,United States Dollar,United States,América do Norte
+UYU,Uruguayan Peso,Uruguay,América do Sul
+UZS,Uzbekistani So'm,Uzbekistan,Ásia
+VES,Venezuelan Bolívar Soberano,Venezuela,América do Sul
+VND,Vietnamese Đồng,Vietnam,Ásia
+VUV,Vanuatu Vatu,Vanuatu,Oceania
+WST,Samoan Tālā,Samoa,Oceania
+XAF,Central African CFA Franc,CEMAC,África
+XCD,East Caribbean Dollar,Organisation of Eastern Caribbean States,América do Norte
+XDR,Special Drawing Rights,International Monetary Fund,Não se aplica
+XOF,West African CFA franc,CFA,África
+XPF,CFP Franc,Collectivités d'Outre-Mer,Oceania
+YER,Yemeni Rial,Yemen,Ásia
+ZAR,South African Rand,South Africa,África
+ZMW,Zambian Kwacha,Zambia,África
+ZWL,Zimbabwean Dollar,Zimbabwe,África
+SLL,Sierra Leonean Leone,Sierra Leone,África
+XCG,Florim do Caribe,Curaçao e São Martinho,América do Norte
